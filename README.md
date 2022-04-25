@@ -4,6 +4,8 @@ This is my portfolio. It highlights my story, skills, and recent projects that I
 
 **Link to project:** https://emilycdev.netlify.app
 
+![port](https://user-images.githubusercontent.com/102037717/165103489-ed427c4a-45a3-4a67-ada3-7681a9166f08.png)
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript
