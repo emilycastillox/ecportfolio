@@ -5,34 +5,34 @@ $("#contactForm").validator().on("submit", function (event) {
         submitMSG(false, "Please fill all required fields!");
     } else {
         // everything looks good!
-        event.preventDefault();
-        submitForm();
+        // event.preventDefault();
+        // submitForm();
     }
 });
  
  
-function submitForm(){
-    // Initiate Variables With Form Content
-    var name = $("#name").val();
-    var email = $("#email").val();
-    // var msg_subject = $("#msg_subject").val();
-    var message = $("#message").val();
+// function submitForm(){
+//     // Initiate Variables With Form Content
+//     var name = $("#name").val();
+//     var email = $("#email").val();
+//     // var msg_subject = $("#msg_subject").val();
+//     var message = $("#message").val();
  
  
-    $.ajax({
-        type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
-    });
-}
+//     $.ajax({
+//         type: "POST",
+//         url: "php/form-process.php",
+//         data: "name=" + name + "&email=" + email + "&message=" + message,
+//         success : function(text){
+//             if (text == "success"){
+//                 formSuccess();
+//             } else {
+//                 formError();
+//                 submitMSG(false,text);
+//             }
+//         }
+//     });
+// }
  
 function formSuccess(){
     $("#contactForm");
